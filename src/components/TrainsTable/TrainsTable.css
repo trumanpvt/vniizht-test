@@ -22,6 +22,7 @@
 
 .TrainsLeftTable {
     border-collapse: collapse;
+    cursor: pointer;
 }
 
 
@@ -64,4 +65,5 @@ input:invalid {
     border: 1px solid #000;
     border-radius: 8px;
     background: #fff;
+    cursor: pointer;
 }

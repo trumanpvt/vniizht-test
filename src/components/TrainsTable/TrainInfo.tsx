@@ -79,7 +79,8 @@ const TrainInfo: React.FC<TrainInfo> = ({train, index}) => {
                         className={`TableInput`}
                         type="number"
                         required
-                        pattern="^\\d+,\\s*(?:\\d+|\\d*\\.\\d+)$"
+                        pattern="/(\d+)?\.\d+(,?)/"
+                        step={"0.000001"}
                         onChange={(e) => onChange(e.target.value, "force", indexOfInside)}
                         defaultValue={characteristics.force}/>
                 </td>
